@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# FinTrack：个人财务管理系统（前端）
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## FinTrack是什么？
+该项目是一个基于React前端和Flask后端（[Personal Finance](https://github.com/winglight/Personal-Finance)）构建的开源个人财务管理系统。它为用户提供了一个全面的工具来跟踪支出、收入和整体财务健康状况（未来）。
 
-## Available Scripts
+## 特别说明
 
-In the project directory, you can run:
+本代码80%来自AI（Claudie）的协助生成，另有文档说明整个过程：[AI助我写代码（9）：个人记账 - FinTrack（前端））](https://www.broyustudio.com/2024/09/06/AI-Help-Personal-Finance.html)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 主要功能
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 交易记录跟踪
+- 支出和收入分类
+- 多账户管理
+- 统计分析和可视化
+- 可自定义的类别和账户
+- 适用于桌面和移动设备的响应式设计
 
-### `npm test`
+## 为什么选择FinTrack？
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 优势
 
-### `npm run build`
+1. **开源**: 完全可定制且免费使用。
+2. **注重隐私**: 您的财务数据保存在自己的服务器上。
+3. **灵活**: 支持多种货币和账户类型。
+4. **洞察力强**: 提供详细的财务统计和可视化。
+5. **用户友好**: 直观的界面，便于导航和数据录入。
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 适用场景
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- 个人预算和支出跟踪
+- 小型企业财务管理
+- 财务目标设定和监控
+- 自由职业者的收入和支出分析
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 安装指南
 
-### `npm run eject`
+### 前提条件
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Node.js (v14或更高版本)
+- Python (v3.7或更高版本)
+- pip (Python包管理器)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 前端设置
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. 克隆仓库：
+   ```
+   git clone https://github.com/winglight/personal-finance-app
+   cd personal-finance-app
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. 安装依赖：
+   ```
+   npm install
+   ```
 
-## Learn More
+3. 修改src/api.js中的后端地址：
+   ```
+   baseURL: 'http://127.0.0.1:5000/'
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 后端设置
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+参考后端项目：[Readme](https://github.com/winglight/Personal-Finance)
 
-### Code Splitting
+## 使用指南
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. 在后端项目命令行中，启动后端服务器：
+   ```
+   python main.py
+   ```
 
-### Analyzing the Bundle Size
+2. 在前端项目目录中，启动前端开发服务器：
+   ```
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. 打开浏览器并访问 `http://localhost:3000`
 
-### Making a Progressive Web App
+4. 在设置页面保存后端config中的用户token。
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+5. 在设置页面设置支出/收入类别。
 
-### Advanced Configuration
+6. 点击加号按钮，添加交易记录，并探索统计页面以深入了解您的财务习惯。
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 许可证
 
-### Deployment
+本项目采用MIT许可证 - 详情请见 [LICENSE.md](LICENSE.md) 文件。
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 支持
 
-### `npm run build` fails to minify
+如果您遇到任何问题或有任何疑问，请在我们的GitHub页面上提交issue。
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+祝您使用FinTrack愉快，财务管理更轻松！
